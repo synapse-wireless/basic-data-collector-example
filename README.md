@@ -11,4 +11,4 @@ Please follow the [Basic Data Collection]() tutorial for more info on installing
 
 This example is available under Apache License version 2.0. See [LICENSE.md](LICENSE.md) for more information.
 
-<!-- meta-tags: vvv-e20, vvv-sn171, vvv-rf200, vvv-ek5100, vvv-ek2100, vvv-datacollector, vvv-python, vvv-example -->
+<!-- meta-tags: vvv-sn171, vvv-rf200, vvv-ek5100, vvv-ek2100, vvv-datacollector, vvv-python, vvv-example -->
