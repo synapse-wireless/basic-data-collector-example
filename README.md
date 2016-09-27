@@ -2,10 +2,10 @@
 
 # Synapse Data Collector - Basic Data Collection Example
 
-This example collects data from two sensors that are internal to SNAP modules: temperature and power supply voltage. The 
+This example collects data from two sensors that are internal to SNAP devices: temperature and power supply voltage. The 
 [snappyatmega library](https://github.com/synapse-wireless/snappy-atmega) will handle the details of reading these sensors.
 
-Please follow the [Basic Data Collection](http://data-collector.readthedocs.io/en/latest/examples/example1.html) tutorial for more info on installing and running this example.
+Please follow the [Basic Data Collection](http://dev.synapse-wireless.com/thing-services/data-collector/tutorial.html) tutorial for more info on installing and running this example.
 
 ## License
 

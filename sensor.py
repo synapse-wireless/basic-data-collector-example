@@ -61,14 +61,6 @@ def _on_startup():
     setPinDir(LED_PIN, True)
     writePin(LED_PIN, False)
 
-    _reset_poll_counter()
-
-
-def _reset_poll_counter():
-    """Reset the poll counter"""
-    global NUM_POLLS
-    NUM_POLLS = 0
-
 
 def _get_poll_counter():
     """Increment and return the poll counter"""
