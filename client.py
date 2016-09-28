@@ -6,7 +6,7 @@ from __future__ import print_function
 
 import logging
 
-from synapse_data_collector.simple_client import simple_data_collector_client
+from simplemqttclient import simple_data_collector_client
 
 LOG = logging.getLogger(__name__)
 
