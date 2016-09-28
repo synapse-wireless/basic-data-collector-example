@@ -23,13 +23,14 @@ import paho.mqtt.client as mqtt
 
 LOG = logging.getLogger(__name__)
 
-
-def simple_data_collector_client(poll_cb=None, metrics_cb=None, status_cb=None, host='localhost', port=1883, topic='dc1'):  # noqa
+def simple_data_collector_client(poll_cb=None, metrics_cb=None, status_cb=None, host='localhost', port=1883, topic='dc1',
+                                 mqtt_user=None, mqtt_pass=None):  # noqa
     """Create an instance of the paho MQTT client and subscribe to things we're interested in."""
 
     root_topic = 'dc/' + topic
 
     mqtt_client = mqtt.Client()
+    mqtt_client.username_pw_set(mqtt_user, mqtt_pass)
 
     def on_connect(client, userdata, flags, rc):
         """MQTT connect callback.
