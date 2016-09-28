@@ -10,8 +10,9 @@ from simplemqttclient import simple_data_collector_client
 
 LOG = logging.getLogger(__name__)
 
-# Set this to point to your E20.
-E20_HOSTNAME = 'localhost'
+# TODO: Replace with your SNAP Thing Services credentials
+STS_USER = "username"
+STS_PASS = "password"
 
 
 def print_poll_results(poll):
@@ -40,7 +41,8 @@ if __name__ == '__main__':
         poll_cb=print_poll_results,
         metrics_cb=print,
         status_cb=print,
-        host=E20_HOSTNAME,
+        mqtt_user=STS_USER,
+        mqtt_pass=STS_PASS,
     )
     print("Polling until CTRL-C is pressed")
     client.loop_forever()
