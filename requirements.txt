@@ -1,1 +1,3 @@
+--extra-index-url https://update.synapse-wireless.com/pypi
 paho-mqtt
+synapse-data-collector-client
