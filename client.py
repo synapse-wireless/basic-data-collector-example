@@ -43,6 +43,7 @@ if __name__ == '__main__':
         status_cb=print,
         mqtt_user=STS_USER,
         mqtt_pass=STS_PASS,
+        topic="SCDC"
     )
     print("Polling until CTRL-C is pressed")
     client.loop_forever()
